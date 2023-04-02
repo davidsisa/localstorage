@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      LocalStorage Example
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input placeholder="Enter a word" [(ngModel)]="word"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="saveWord()">Save</ion-button>
+  <p>Stored word: {{ storedWord }}</p>
+</ion-content>
